@@ -5,6 +5,6 @@ export async function POST(request:Request){
     const {title,price,description} = body
     const product = await addProduct(title,price,description)
     return new Response(JSON.stringify(product),{
-        headers: {'Content-Type':"application/jsongit s"}
+        headers: {'Content-Type':"application/json"}
     })
 }
